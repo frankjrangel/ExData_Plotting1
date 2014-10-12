@@ -12,6 +12,9 @@ data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
 data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
 data$Sub_metering_3 <- as.numeric(as.character(data$Sub_metering_3))
 
+#Set par
+par(mfrow = c(1,1))
+
 #Open device and plot data
 png(filename = "plot3.png", width = 480, height = 480, units = "px")
 

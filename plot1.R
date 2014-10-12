@@ -18,6 +18,9 @@ data <- rbind(x, y)
 #Set numeric values to work with hist()
 data$Global_active_power <- as.numeric(as.character(data$Global_active_power))
 
+#Set par
+par(mfrow = c(1,1))
+
 #Open device and plot data
 png(filename = "plot1.png", width = 480, height = 480, units = "px")
 
